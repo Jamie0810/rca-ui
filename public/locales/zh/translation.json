@@ -1,0 +1,603 @@
+{
+  "login": {
+    "caption": {
+      "part1": "新一代",
+      "part2": "全廠良率溯源智能化方案",
+      "part3": "WYJ·FDJ·XWJ"
+    },
+    "form": {
+      "title": "用户登入",
+      "username": "帳號",
+      "password": "密碼"
+    }
+  },
+  "dashboard": {
+    "platform_information": "平台運行資訊",
+    "platform_data_analysis": "數據即時性分析",
+    "latest_adopted_test_data": "數據收檔的最新一筆測試記錄",
+    "latest_integrated_test_data": "數據整合的最新一筆測試記錄",
+    "latest_calculated_test_data": "計算分析的最新一筆測試記錄",
+    "data_processing_tips": {
+      "data_processing_steps": "平台數據處理三階段",
+      "data_processing_step_1": "數據收檔：從數據源收取檔案至平台，進行識別、拆解、儲存",
+      "data_processing_step_2": "數據整合：篩選測試及組裝完整的產品，將數據整合、貼標供分析使用",
+      "data_processing_step_3": "計算分析：進行數據分析計算，供用戶查詢使用"
+    }
+  },
+  "menu": {
+    "home": "首頁",
+    "wyj": "望遠鏡",
+    "fdj": "放大鏡",
+    "fdj_defect": "診斷報表",
+    "fdj_validation": "互動式SN驗證",
+    "fdj_validation_create": "新增清單",
+    "fa": "FA案例",
+    "fa_create": "FA案例新增",
+    "fa_list": "FA案例查詢",
+    "xwj": "顯微鏡",
+    "xwj_dataset_create": "資料集新增",
+    "xwj_dataset_query": "資料集查詢",
+    "xwj_dataset_list": "資料集清單",
+    "xwj_dataset_edit": "資料集編輯",
+    "xwj_dataset_reveal": "資料集管理",
+    "xwj_analysis_create": "分析集新增",
+    "xwj_analysis_query": "分析集查詢",
+    "xwj_analysis_list": "分析集清單",
+    "xwj_analysis_edit": "分析集編輯",
+    "xwj_analysis_reveal": "分析集管理",
+    "configuration": "設定",
+    "configuration_code": "代碼描述設定",
+    "configuration_product": "產品導入設定",
+    "configuration_product_create": "產品新增",
+    "configuration_product_edit": "產品維護",
+    "configuration_product_reveal": "產品管理",
+    "configuration_user": "使用者管理",
+    "platform": "系統管理",
+    "platform_users": "使用者管理",
+    "platform_user_create": "新增使用者",
+    "platform_user_edit": "使用者維護",
+    "platform_roles": "角色管理",
+    "platform_role_create": "新增角色",
+    "platform_role_edit": "角色維護"
+  },
+  "defect": {
+    "search_caption": "診斷報表條件",
+    "datetime_period_of_criteria": "查詢時間區間",
+    "datetime_period_of_data": "數據時間區間",
+    "failure_in_total": "總不良數",
+    "date_period_note": "(查詢區間不得超過14天)",
+    "fail_symptom_note": "(預設為5，上限20，以不良率排序)",
+    "quantity_of_fail_symptom": "不良徵狀數量",
+    "list_by_fail_symptom": "不良徵狀列表",
+    "tip_by_fail_symptom": {
+      "part1": "排名：依不良率排序",
+      "part2": "異常持續小時：查詢範圍裡，該不良徵狀的異常發生持續時間",
+      "part3": "最高風險因子：系統分析診斷最高的風險因子（可能為製程/設備/物料）",
+      "part4": "風險來源：最高風險因子下的最高風險來源",
+      "part5": "集中性：該風險來源的不良集中程度",
+      "part6": "顯著性：該風險來源的顯著程度，顯著性高表示集中性參考價值高",
+      "part7": "產出比例：該風險來源在所有生產中的比例"
+    },
+    "test_station": "測試工站",
+    "test_item": "測試項目",
+    "fail_rate": "不良率",
+    "fail_symptom": "不良徵狀",
+    "quantity_of_failure": "不良數量",
+    "hours_of_abnormal": "異常持續小時",
+    "risk": "風險因子",
+    "top_risk": "最高風險因子",
+    "top_risk_negative": "無風險傾向",
+    "top_risk_lack_of_data": "不良數量不足分析",
+    "risk_source": "風險來源",
+    "commonality": "集中性",
+    "significance": "顯著性",
+    "throughput_ratio": "產出比例",
+    "list_in_fail_symptom": "不良數量明細",
+    "test_equipment": "測試設備",
+    "test_datetime": "測試時間",
+    "fail_note": "不良描述",
+    "list_by_risk_factor": "風險因子列表",
+    "tip_by_risk_factor": {
+      "part1": "集中性：風險來源(即作業員/設備編號/物料廠商) 的不良集中程度",
+      "part2": "顯著性：該風險來源的顯著程度，顯著性高表示集中性參考價值高",
+      "part3": "產出比例：該風險來源在所有生產中的比例",
+      "part4": "不良品連續性：不良品發生時佔所有產出時間的比例",
+      "part5": "風險評分：該風險來源的風險傾向分數"
+    },
+    "assembling": "製程",
+    "station": "設備",
+    "date_code": "物料",
+    "assemble_station": "組裝工站",
+    "risk_materiel": "風險物料",
+    "materiel_vendor": "物料廠商",
+    "operator": "作業員",
+    "equipment_serial": "設備編號",
+    "succession": "不良品連續性",
+    "risk_review": "風險評分",
+    "list_by_risk_source": "風險來源列表",
+    "tip_by_risk_source": {
+      "part1": "集中性：風險來源(即作業員/設備編號/物料廠商) 的不良集中程度",
+      "part2": "顯著性：該風險來源的顯著程度，顯著性高表示集中性參考價值高",
+      "part3": "產出比例：該風險來源在所有生產中的比例",
+      "part4": "不良品連續性：不良品發生時佔所有產出時間的比例",
+      "part5": "風險評分：該風險來源的風險傾向分數"
+    },
+    "invalid_flag": "失效註記",
+    "assemble_datetime": "組裝時間",
+    "wo": "WO",
+    "assemble_item": "組裝物料",
+    "assemble_item_sn": "組裝物料SN"
+  },
+  "validation": {
+    "list": "驗證清單",
+    "serial_number": "SN",
+    "result": "驗證結果",
+    "validate_time": "驗證時間",
+    "tab": {
+      "test_data": "測試資料",
+      "assemble_master": "組裝主表",
+      "assemble_detail": "組裝明細"
+    },
+    "create": "新增SN驗證清單"
+  },
+  "fa": {
+    "caption": {
+      "basic_information": "FA分析基本資訊",
+      "analysis_process": "分析流程",
+      "defect_list": "SN案例清單",
+      "defect_search": "不良紀錄SN查詢"
+    },
+    "query": "FA案例查詢",
+    "list": "案例清單",
+    "symptom": "分析徵狀",
+    "symptom_note": "徵狀描述",
+    "occur_datetime": "徵狀發生時間",
+    "analysis_complete_datetime": "分析完成時間",
+    "root_cause": "根因分析",
+    "risk_type": "不良因子分類",
+    "analysis_note": "分析過程說明",
+    "root_cause_note": "關鍵根因說明",
+    "plan": "長短期方案",
+    "solution": "最後行動",
+    "attachment": "相關文檔",
+    "attachment_note_tip": "新增檔案描述...",
+    "attachment_note_none": "無檔案描述",
+    "create_time": "案例建立時間",
+    "creator": "案例建立人員",
+    "download": "案例下載",
+    "defect_import": "SN導入工具"
+  },
+  "label_code": {
+    "type_options": {
+      "fail_symptom": "不良徵狀",
+      "vendor_code": "廠商代碼",
+      "date_code": "Date Code",
+      "component": "物料",
+      "xwj_common": "XWJ通用欄位"
+    },
+    "type": "代碼類型",
+    "code": "代碼",
+    "management": "代碼維護",
+    "label": "顯示描述"
+  },
+  "product": {
+    "list": "產品列表",
+    "collect": "資料擷取",
+    "ref_product": "設定參照",
+    "ref_config": "參照內容",
+    "ref_config_options": {
+      "shift": "班別",
+      "component_code": "物料編碼",
+      "station": "關鍵測站設定",
+      "component": "關鍵物料設定",
+      "label_code": "代碼描述設定（含不良代碼、物料、廠商，Date code)"
+    },
+    "create": "新增產品基本資料",
+    "edit": "編輯產品基本資料",
+    "data_collect_work_datetime": "擷取排程起訖時間",
+    "data_collect_trigger_datetime": "數據擷取起始時間",
+    "data_collect_stop_datetime": "數據擷取結束時間",
+    "function": {
+      "data_capture": "數據邏輯",
+      "data_filter": "計算設定",
+      "label_code": "描述設定",
+      "validation": "數據驗證"
+    },
+    "data_filter": {
+      "list_type": "名單類型",
+      "crucial_test_station_caption": "關鍵測站設定",
+      "crucial_component_caption": "關鍵物料設定",
+      "material_code_conversion_caption": "物料編碼轉換",
+      "material_code_conversion": {
+        "whitelist": "物料白名單",
+        "blacklist": "物料黑名單",
+        "length_of_part_sn": "PartSN長度",
+        "vendor_code": "廠商代碼固定值",
+        "vendor_code_start_index": "廠商代碼起始位置",
+        "vendor_code_end_index": "廠商代碼結束位置",
+        "vendor_code_criteria": "廠商代碼設定條件",
+        "date_code_start_index": "Date Code起始位置",
+        "date_code_end_index": "Date Code結束位置"
+      }
+    },
+    "validation": {
+      "history_in_7_days": "近7日驗證結果",
+      "ftp_source_data_format": "FTP來源格式",
+      "product_configuration": "產品設定",
+      "summary_data_format": "Summary格式",
+      "validate_date": "驗證日期",
+      "validate_result": "驗證結果",
+      "download_report": "報表下載",
+      "information_caption": "驗證來源資訊",
+      "ftp_directory": "FTP目錄",
+      "summary_file_directory": "Summary File目錄",
+      "validate_period": "驗證期間",
+      "type": {
+        "ftp_source_date_format": "FTP來源格式驗證",
+        "product": "產品代碼驗證",
+        "summary_data_format": "Summary格式驗證"
+      }
+    },
+    "data_capture": {
+      "adopt_criteria": {
+        "label": "True Fail判斷",
+        "option_1": "一次失敗判斷為true fail",
+        "option_2": "連續二次失敗判斷為true fail"
+      },
+      "permitted_compose_time_diff": "組裝主表細表容許時間差 (s)",
+      "permitted_compose_test_time_diff": "測試與組裝容許時間差 (s)",
+      "data_upload_frequency": "用戶數據上傳頻率 (min)",
+      "shift": "班別",
+      "first_shift": "早班",
+      "second_shift": "中班",
+      "third_shift": "晚班"
+    },
+    "label_code": {
+      "function": {
+        "fail_symptom": "不良徵狀代碼描述",
+        "component": "物料名稱描述",
+        "vendor": "廠商代碼描述",
+        "date_code": "Date Code代碼描述"
+      }
+    }
+  },
+  "dataset": {
+    "list": "資料集清單",
+    "keyword_placeholder": "產品/名稱/描述/創建人",
+    "information": "資料集資訊",
+    "test_station_and_test_item": "測試工站和測試項目",
+    "crucial_component_kinds_template": "關鍵物料數{{count}}種",
+    "data_pool": {
+      "big_table": "大表",
+      "last_update_datetime": "資料集大表最近一次更新時間",
+      "next_update_datetime": "資料集大表下次更新時間",
+      "confirm_delete_message":
+      "本資料集底下，已有 {{count}} 個分析集，若刪除本資料集，將一併刪除所有已建立的案例。\n請問確定要刪除本資料集嗎?",
+      "processor_activate_datetime_range": "資料集大表排程生效區間",
+      "data_range": "資料範圍",
+      "test_station_item_information": "測試工站數{{station_count}}站；測試項目數{{item_count}}項"
+    }
+  },
+  "analysis_set": {
+    "name": "分析集名稱",
+    "data_update_datetime": "分析集數據更新時間",
+    "information": "分析集資訊",
+    "list": "分析集清單",
+    "keyword_placeholder": "產品/資料集/分析集/分析筆記",
+    "delete_notice": "若刪除本分析集，將一併刪除分析集數據及分析筆記\n請問確定要刪除本分析集嗎？",
+    "reveal_caption": "{{name}}基本資訊",
+    "reveal_tab_target": "數據工作區",
+    "reveal_tab_visualize": "分析工作區",
+    "reveal_tab_capture": "分析筆記",
+    "reveal_tab_matrix": "分析矩陣",
+    "chart_information_caption": "圖表資訊",
+    "data_source": "資料集數據來源",
+    "visualization": {
+      "caption": "分析圖表",
+      "load_failed_notice": "{{name}} 資料讀取失敗",
+      "data_leak_notice": "{{caption}}_{{name}} 資料不足..."
+    },
+    "target": {
+      "configuration": "分析集數據設定",
+      "data_pool": "分析集數據檢視",
+      "statistic": "分析集數據統計",
+      "field_list": "欄位清單",
+      "customize_field": "自訂欄位設定",
+      "data_election": "測試數據擷取設定",
+      "customize_field_number_expression":
+      "<0>{{newname}}</0>參考<2>{{name}}</2>乘上倍率<4>{{times}}</4>，取小數位<6>{{precision}}</6>",
+      "customize_field_string_expression":
+      "<0>{{newname}}</0>參考<2>{{name}}</2>擷取內容從第<4>{{start}}</4>字，取<6>{{length}}</6>個字",
+      "data_election_rule": {
+        "first": "取第一筆測試數據",
+        "last": "取最後一筆測試數據"
+      },
+      "data_filter": "數據篩選設定",
+      "field_maker": {
+        "field_name": "自訂欄位名稱",
+        "referenced_field_name": "參照欄位名稱",
+        "reference_rule": "參照方式",
+        "numeric": {
+          "part1": "倍率",
+          "part2": "，取小數位"
+        },
+        "text": {
+          "part1": "擷取內容從第",
+          "part2": "字，取",
+          "part3": "個字"
+        }
+      },
+      "field_criteria": {
+        "rule": "篩選方式",
+        "restriction": "篩選值",
+        "field_name": "篩選欄位名稱",
+        "operator": {
+          "equals": "完全符合",
+          "contains": "包含",
+          "starts_with": "開頭為",
+          "ends_with": "結尾為",
+          "missing": "不為空值"
+        }
+      },
+      "statistic_summary": "統計摘要"
+    },
+    "capture": {
+      "information": "筆記資訊",
+      "analysis": "分析筆記",
+      "list": "歷史紀錄",
+      "serial": "編號",
+      "creator": "筆記人",
+      "modify_datetime": "最後筆記時間",
+      "save_notice": "儲存筆記？",
+      "delete_notice": "是否刪除筆記？",
+      "content": "筆記內容",
+      "no_content": "無筆記內容",
+      "caption_placeholder": "編輯筆記標題",
+      "content_placeholder": "編輯筆記內容",
+      "data_information": "分析集數據資訊",
+      "chart_configuration": "設定資訊",
+      "sample_information": "樣本資訊",
+      "modify_datetime_template": "異動時間：{{time}}",
+      "data_datetime_template": "異動時間：{{start_time}} ~ {{end_time}}",
+      "observe_value_template": "觀察值：{{value}}",
+      "observe_range_template": "觀察值規格：[{{start}}, {{end}}]",
+      "y_axis_template": "Y軸：{{data}}",
+      "y_focus_range_template": "Y軸規格內區間：[{{lower}}, {{upper}}]",
+      "y_config_range_template": "Y軸繪圖顯示區間：[{{lower}}, {{upper}}]",
+      "x_axis_template": "X軸：{{data}}",
+      "x_focus_range_template": "X軸規格內區間：[{{lower}}, {{upper}}]",
+      "x_config_range_template": "X軸繪圖顯示區間：[{{lower}}, {{upper}}]",
+      "category_1_template": "分類1：{{tag}} ({{field}})",
+      "category_2_template": "分類2：{{field}}",
+      "total_sample_template": "總樣本數：{{count}}",
+      "records_in_category": "分類筆數",
+      "samples_in_records_template": "[{{category}}]樣本數：{{count}}",
+      "statistic": "統計分析",
+      "statistic_mean_template": "mean：{{value}}",
+      "statistic_stdev_template": "stdev：{{value}}",
+      "statistic_cpk_template": "CPK：{{value}}",
+      "statistic_r_square_template": "R square：{{value}}"
+    },
+    "matrix": {
+      "list": "矩陣清單",
+      "trend_of_test_item": "測項趨勢",
+      "type": "{{value}}矩陣",
+      "report_datetime": "報表產出時間",
+      "report": "矩陣報表",
+      "not_yet": "尚未產出",
+      "create": "新增{{value}}",
+      "reveal": "檢視{{value}}",
+      "test_datetime": "測試時間",
+      "time_scale_by_month": "依每月",
+      "time_scale_by_week": "依每週",
+      "time_scale_by_day": "依每日",
+      "render_by": "{{scale}}繪製",
+      "render_normal_distribution_by_group": "繪製組內正態分配",
+      "render_normal_distribution_by_total": "繪製整體正態分配"
+    },
+    "plot": {
+      "category_1": "分類1",
+      "category_1_label": "分類1標籤",
+      "category_2": "分類2",
+      "x_axis": "X軸",
+      "x_axis_label": "X軸標籤",
+      "y_axis": "Y軸",
+      "y_axis_label": "Y軸標籤",
+      "y_config_range": "Y軸繪圖區間",
+      "y_observe": "Y軸觀察內容",
+      "clustering": "分群",
+      "clustering_label": "分群標籤",
+      "data_time_scale": "觀察時間顆粒度",
+      "by_assemble_date": "依組裝日期",
+      "by_assemble_month": "依組裝月份",
+      "observe_target": "觀察值",
+      "observe_label": "觀察值標籤",
+      "plot_scatter": "散點圖 - Scatter Plot",
+      "plot_box": "盒型圖 - Box Plot",
+      "plot_normal_distribution": "常態分佈圖 - Normal Distribution",
+      "plot_bar": "長條圖 - Bar Plot",
+      "plot_line": "折線圖 - Line Plot"
+    }
+  },
+  "wyj": {
+    "commonality_analysis_template": "{{name}} 集中性分析",
+    "risk_id": "製程/設備/物料",
+    "risk_defect_amount": "風險數量/不良數量",
+    "defect_analysis": "不良原因分析",
+    "defect_producing_amount": "不良/生產數量",
+    "analyze_range": "分析區間",
+    "current_shift": "當前班別",
+    "specific_datetime": "指定時間",
+    "datetime_range_start": "起始時間",
+    "datetime_range_end": "截止時間",
+    "criteria_tip": {
+      "part1": "實際數據區間：{{start}} ~ {{end}}",
+      "part2": "即時性分析",
+      "part3": "數據收檔的最新一筆測試記錄（全線體）：{{data}}",
+      "part4": "數據整合的最新一筆測試記錄：{{data}}",
+      "part5": "計算分析的最新一筆測試記錄：{{data}}"
+    },
+    "recommend_resolution": "最佳解析度為1920*1080",
+    "open_dashboard": "開啟看板",
+    "by_product": "指定產品",
+    "by_line": "指定線別",
+    "criteria_setting": "看板開啟條件設定",
+    "low_defect_amount": "不良數量不足分析",
+    "no_risk": "無風險傾向"
+  },
+  "profile": {
+    "password_original": "原密碼",
+    "password_new": "新密碼",
+    "password_confirm": "確認新密碼"
+  },
+  "platform": {
+    "users": {
+      "query": "帳號查詢",
+      "last_login_time": "最近活動時間",
+      "suspend": "停用 ",
+      "suspend_datetime": "停用時間",
+      "department": "組織",
+      "confirm_password_tip": "請確認密碼",
+      "reset_password_failed_tip": "重設密碼失敗"
+    },
+    "roles": {
+      "entry": "功能名稱",
+      "query": "角色權限列表"
+    }
+  },
+  "common": {
+    "id": "ID",
+    "sn": "SN",
+    "login": "登入",
+    "logout": "登出",
+    "search": "查詢",
+    "date_period": "日期起訖",
+    "datetime_period": "時間起訖",
+    "product": "產品",
+    "floor": "樓層",
+    "line": "線別",
+    "name": "名稱",
+    "all": "全部",
+    "location": "區域",
+    "rank": "排名",
+    "serial": "序號",
+    "note": "註記",
+    "others": "其他",
+    "category": "分類",
+    "choose": "請選擇",
+    "create_time": "建立時間",
+    "modify_time": "最後異動時間",
+    "create": "新增",
+    "creator": "建立者",
+    "edit": "維護",
+    "delete": "刪除",
+    "save": "儲存",
+    "cancel": "取消",
+    "reveal": "檢視",
+    "client": "客戶",
+    "any": "不限",
+    "keyword": "關鍵字",
+    "code": "代碼",
+    "description": "描述",
+    "activate": "啟用",
+    "suspend": "停止",
+    "whitelist": "白名單",
+    "blacklist": "黑名單",
+    "limit_50_letters_tip": "（上限50個字元）",
+    "limit_1000_letters_tip": "（上限1000個字元）",
+    "attachment_tip": "文檔總計不得大於30MB",
+    "dataset": "資料集",
+    "analysis_set": "分析集",
+    "copy_of": "{{name}}_複製",
+    "copy_or_delete": "複製/刪除",
+    "content": "內容",
+    "caption": "標題",
+    "no_caption": "無標題",
+    "none": "無",
+    "basic_information": "基本資訊",
+    "undefined": "未指定",
+    "range_upper_bound": "規格上限",
+    "range_lower_bound": "規格下限",
+    "probability_density_function": "機率密度函數值",
+    "amount": "數量",
+    "distribution": "分佈",
+    "type": "類別",
+    "field": "欄位",
+    "plot_scatter": "散點圖",
+    "plot_box": "盒型圖",
+    "plot_normal_distribution": "常態分佈圖",
+    "plot_bar": "長條圖",
+    "plot_line": "折線圖",
+    "record_limits_range": "至少{{at_least}}筆，上限{{at_most}}筆",
+    "crucial_test_station": "關鍵測站",
+    "crucial_component": "關鍵物料",
+    "records_template": "總計為{{records}}筆數據，{{fields}}欄位",
+    "low": "低",
+    "high": "高",
+    "xwj": "顯微鏡",
+    "wyj": "望遠鏡",
+    "default_modal_caption": "提示訊息",
+    "change_password": "修改密碼",
+    "account": "帳號",
+    "role": "角色",
+    "status": "狀態",
+    "email": "E-mail",
+    "permission": "權限群組",
+    "permission_read": "查看",
+    "permission_create": "新增",
+    "permission_update": "修改",
+    "permission_delete": "刪除"
+  },
+  "message": {
+    "system": {
+      "error": "系統錯誤，請稍後再試！",
+      "load_failed": "載入失敗",
+      "create_failed": "新增失敗",
+      "form_incomplete": "請輸入必填欄位",
+      "save_succeed": "儲存成功！",
+      "save_failed": "儲存失敗！",
+      "delete_succeed": "刪除成功！",
+      "delete_failed": "刪除失敗",
+      "data_not_found": "查無資料"
+    },
+    "validation": {
+      "delete": "確定刪除此驗證排程？"
+    },
+    "label_code": {
+      "delete": "確定刪除？"
+    },
+    "product": {
+      "statistic_config_upload_fail": "csv格式有誤，儲存失敗",
+      "no_validation_result": "無驗證結果"
+    },
+    "matrix": {
+      "delete": "刪除矩陣?"
+    },
+    "plot": {
+      "confirm_save": "儲存圖表？",
+      "confirm_delete": "是否刪除圖表？",
+      "save_failed": "#{{id}} {{name}} 讀取失敗",
+      "confirm_capture": "將圖表存入筆記？"
+    },
+    "dataset": {
+      "select_product": "請先選擇產品"
+    },
+    "wyj": {
+      "date_range": "時間區間不可大於{{days}}天",
+      "select_date_start": "請選擇起始時間"
+    },
+    "profile": {
+      "reset_password_success": "密碼修改成功！",
+      "reset_password_failed": "密碼修改失敗！",
+      "password_confirm": "密碼不一致",
+      "password_incorrect": "密碼錯誤",
+      "login_failed": "登入失敗"
+    }
+  },
+  "site": "新一代全廠良率溯源智能化方案",
+  "title": "Welcome to react using react-i18next",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  }
+}

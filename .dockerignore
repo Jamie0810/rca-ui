@@ -1,0 +1,7 @@
+node_modules
+yarn*
+deployToK8S.sh
+wyj*
+README.md
+*.tar
+*.gz
